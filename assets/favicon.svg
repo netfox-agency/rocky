@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" fill="#1C433B"/>
+  <!-- ligne de toit asymétrique + souche : reprise du signe déjà utilisé par VBR -->
+  <path d="M3 22 L13.5 9.5 L15.8 12.2 L15.8 7.5 L18.6 7.5 L18.6 15.5 L23.5 21.3 L29 21.3"
+        fill="none" stroke="#F5F2EA" stroke-width="2.1" stroke-linecap="square" stroke-linejoin="miter"/>
+</svg>

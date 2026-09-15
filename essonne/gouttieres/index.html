@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<!-- ============================================================
+     PAGE GÉNÉRÉE par build.py — ne pas éditer ce fichier de sortie.
+     Éditer templates/page.html ou les dictionnaires de build.py,
+     puis relancer `python3 build.py`.
+     ============================================================ -->
+
+<title>Gouttières en Essonne · pose, réparation, nettoyage | VBR</title>
+<meta name="description" content="Pose, réparation et nettoyage de gouttières à Évry, Étampes, Massy et dans tout le département de l'Essonne. Zinc, aluminium, PVC. Artisan installé depuis 2003, devis gratuit. ☎ 06 59 45 83 80" />
+<!-- noindex tant que le domaine définitif et les mentions légales complètes ne
+     sont pas en place. Ça ne bloque pas Google Ads : une landing en noindex
+     se diffuse normalement, et ça évite de cannibaliser vbrnettoyage.fr. -->
+<meta name="robots" content="noindex, nofollow" />
+<link rel="canonical" href="https://vbr-pro.fr/essonne/gouttieres/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:title" content="Gouttières en Essonne · pose, réparation, nettoyage" />
+<meta property="og:description" content="Gouttière qui déborde, descente bouchée, fuite au raccord : on nettoie, on répare, on remplace. Évry, Étampes, Massy et dans tout le département de l'Essonne." />
+<meta property="og:url" content="https://vbr-pro.fr/essonne/gouttieres/" />
+<meta property="og:image" content="https://vbr-pro.fr/assets/img/nettoyage-gouttiere-jet.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg" />
+<meta name="theme-color" content="#F5F2EA" />
+<meta name="geo.region" content="FR-91" />
+<meta name="geo.placename" content="Évry-Courcouronnes" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" />
+<link rel="preload" as="image" href="../../assets/img/nettoyage-gouttiere-jet.jpg" fetchpriority="high" />
+<link rel="stylesheet" href="../../assets/styles.css?v=1" />
+
+<!-- ---------- Google Ads : gtag, Consent Mode v2, conversions ----------
+     Tout reste inerte tant qu'un identifiant contient XXXX (script.js le teste). -->
+<script>
+window.ADS_GTAG = 'AW-18438830933';
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+/* Sans Consent Mode, Google n'a pas le droit de modéliser les conversions des
+   visiteurs qui refusent : on les perd sèchement. Avec, il les estime.
+   wait_for_update laisse 500 ms au choix déjà mémorisé pour arriver. */
+var _consentVBR = null;
+try { _consentVBR = localStorage.getItem('vbr_consent'); } catch (e) {}
+gtag('consent', 'default', {
+  ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied',
+  analytics_storage: 'denied', wait_for_update: 500
+});
+if (_consentVBR === 'granted') {
+  gtag('consent', 'update', {
+    ad_storage: 'granted', ad_user_data: 'granted',
+    ad_personalization: 'granted', analytics_storage: 'granted'
+  });
+}
+gtag('set', 'ads_data_redaction', true);
+gtag('set', 'url_passthrough', true);
+if (window.ADS_GTAG.indexOf('XXXX') === -1) {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.ADS_GTAG;
+  document.head.appendChild(s);
+  gtag('js', new Date());
+  gtag('config', window.ADS_GTAG, { allow_enhanced_conversions: true });
+}
+window.ADS_CONVERSION = 'AW-18438830933/gspjCJ3-vfEcENX2qNhE';
+window.ADS_CONVERSION_APPEL = 'AW-18438830933/XsgfCJmWx_EcENX2qNhE';
+/* Accroche alignée sur la requête tapée (voir script.js § 6). */
+window.LP_VILLES = ["Évry","Évry-Courcouronnes","Courcouronnes","Étampes","Massy","Brétigny-sur-Orge","Brétigny","Palaiseau","Corbeil-Essonnes","Corbeil","Arpajon","Dourdan","Savigny-sur-Orge","Longjumeau","Sainte-Geneviève-des-Bois","Athis-Mons","Draveil","Montgeron","Yerres","Mennecy","Milly-la-Forêt","Les Ulis","Orsay","Limours"];
+window.LP_MATCH = {
+  gouttiere:{h1:"Gouttières nettoyées, réparées, <em>ou remplacées.</em>",
+             sub:"On commence toujours par regarder si un nettoyage et une reprise de pente suffisent. Devis et visite gratuits."},
+  prix:     {h1:"Le prix de vos gouttières, <em>au mètre linéaire.</em>",
+             sub:"Linéaire, hauteur, matériau et état de la rive font le tarif. On monte voir, puis on chiffre fermement."},
+  urgence:  {h1:"Gouttière qui fuit : <em>on vient regarder.</em>",
+             sub:"Un débordement chronique abîme la rive et la façade. Plus tôt on le reprend, moins ça coûte.",
+             urgent:"Ça déborde et ça coule sur le mur ? Appelez, on cadre l'intervention au téléphone."},
+  besoin:   {gouttiere:"Nettoyage de gouttières et descentes", prix:"Remplacement de gouttières",
+             urgence:"Gouttière qui fuit ou qui déborde", nettoyage:"Nettoyage de gouttières et descentes"}
+};
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "RoofingContractor",
+  "@id": "https://vbr-pro.fr/essonne/gouttieres/#business",
+  "name": "VBR Nettoyage",
+  "url": "https://vbr-pro.fr/essonne/gouttieres/",
+  "telephone": "+33659458380",
+  "email": "vbr.paca@gmail.com",
+  "image": "https://vbr-pro.fr/assets/img/nettoyage-gouttiere-jet.jpg",
+  "identifier": "445 061 526",
+  "foundingDate": "2003-02-03",
+  "priceRange": "€€",
+  "currenciesAccepted": "EUR",
+  "paymentAccepted": "Chèque, Virement, Espèces",
+  "description": "Pose, réparation et nettoyage de gouttières et de descentes à Évry, Étampes, Massy et dans tout le département de l'Essonne. Zinc, aluminium et PVC. Entreprise créée en 2003.",
+  "address": {"@type":"PostalAddress","addressLocality":"Évry-Courcouronnes","postalCode":"91000","addressRegion":"Île-de-France","addressCountry":"FR"},
+  "geo": {"@type":"GeoCoordinates","latitude":48.6238,"longitude":2.4295},
+  "openingHoursSpecification": [{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"08:00","closes":"19:00"}],
+  "areaServed": [{"@type":"City","name":"Évry-Courcouronnes"},{"@type":"City","name":"Étampes"},{"@type":"City","name":"Massy"},{"@type":"City","name":"Brétigny-sur-Orge"},{"@type":"City","name":"Palaiseau"},{"@type":"City","name":"Corbeil-Essonnes"},{"@type":"City","name":"Arpajon"},{"@type":"City","name":"Dourdan"},{"@type":"City","name":"Savigny-sur-Orge"},{"@type":"City","name":"Longjumeau"},{"@type":"City","name":"Sainte-Geneviève-des-Bois"},{"@type":"City","name":"Athis-Mons"},{"@type":"City","name":"Draveil"},{"@type":"City","name":"Montgeron"},{"@type":"City","name":"Yerres"},{"@type":"City","name":"Mennecy"}],
+  "hasOfferCatalog": {"@type":"OfferCatalog","name":"Zinguerie, gouttières et descentes","itemListElement":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Nettoyage de gouttières et de descentes"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Réparation de gouttière et reprise de raccord"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pose de gouttières en zinc, aluminium ou PVC"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Remplacement de descentes d'eau pluviale"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Pose de crapaudines et de protections anti-feuilles"}}]}
+}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Combien coûte un nettoyage de gouttières ?","acceptedAnswer":{"@type":"Answer","text":"Il se chiffre au mètre linéaire, et l'accès pèse beaucoup dans le total. Un plain-pied accessible à l'échelle et un étage nécessitant une nacelle n'ont pas le même coût. La visite et le devis sont gratuits."}},{"@type":"Question","name":"À quelle fréquence faut-il les nettoyer ?","acceptedAnswer":{"@type":"Answer","text":"Une fois par an après la chute des feuilles suffit dans la plupart des cas. Sous des arbres, deux passages sont souvent nécessaires : un à l'automne, un au printemps. Des crapaudines et des grilles espacent nettement ces interventions."}},{"@type":"Question","name":"Zinc, aluminium ou PVC : que choisir ?","acceptedAnswer":{"@type":"Answer","text":"Le zinc reste la référence sur le bâti ancien pour sa durée de vie et son aspect. L'aluminium est un bon compromis, léger et sans soudure. Le PVC est le plus économique, mais il supporte mal les fortes chaleurs et les chocs. On vous oriente selon la maison, l'exposition et le budget."}},{"@type":"Question","name":"Ma gouttière fuit à un raccord : faut-il tout changer ?","acceptedAnswer":{"@type":"Answer","text":"Pas forcément. Une fuite localisée sur un raccord, un angle ou une soudure se reprend souvent très bien. Le remplacement s'impose quand le linéaire est déformé, percé par la corrosion ou que les crochets ne tiennent plus dans un bois de rive abîmé."}},{"@type":"Question","name":"Intervenez-vous sur les descentes bouchées ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Descente, coude, naissance et raccordement au regard font partie du contrôle systématique, et on termine toujours par un essai à l'eau pour vérifier que ça part vraiment."}},{"@type":"Question","name":"Pouvez-vous nettoyer les gouttières pendant le démoussage du toit ?","acceptedAnswer":{"@type":"Answer","text":"Oui, et c'est l'ordre logique : on démousse d'abord, puis on nettoie les gouttières, puisque le démoussage y envoie forcément des débris. Groupées, les deux interventions évitent un second déplacement."}}]}
+</script>
+</head>
+
+<body data-lp="gouttieres_91">
+
+<!-- ================= HEADER ================= -->
+<header class="hdr">
+  <div class="wrap hdr-in">
+    <a class="brand" href="#haut" aria-label="VBR Nettoyage, accueil de la page">
+      <svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 33 L26 8 L31 13.5 L31 4 L37 4 L37 20 L47 32 L60 32" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="square"/></svg>
+      <span class="brand-txt">
+        <span class="brand-name">VBR</span>
+        <span class="brand-sub">Nettoyage · Couverture</span>
+      </span>
+    </a>
+    <div class="hdr-act">
+      <a class="hdr-tel" href="tel:+33659458380">
+        <span>Devis gratuit</span><b>06 59 45 83 80</b>
+      </a>
+      <a class="btn btn-call" href="tel:+33659458380">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        Appeler
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="haut">
+  <div class="wrap hero-grid">
+
+    <div class="hero-copy">
+      <p class="kicker">Zinguerie · Gouttières · Descentes</p>
+      <div class="hero-chips">
+        <span class="hero-loc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Évry, Étampes, Massy et tout le 91
+        </span>
+        <span class="hero-anc">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg>
+          Artisan installé depuis 2003
+        </span>
+      </div>
+      <h1>L'eau doit finir dans la descente, <em>pas dans votre mur.</em></h1>
+      <p class="hero-sub">Gouttière qui déborde, descente bouchée, raccord qui goutte, crochets descellés : on nettoie, on répare, et on remplace quand la reprise n'a plus de sens. Zinc, aluminium ou PVC.</p>
+      <ul class="hero-points"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span>Nettoyage complet, chéneaux et descentes, avec contrôle de l'écoulement</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span>Réparation ciblée avant remplacement : on ne change pas ce qui tient</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span>Pose en zinc, aluminium ou PVC selon la maison et le budget</span></li></ul>
+      <div class="hero-cta">
+        <a class="btn btn-call" href="tel:+33659458380">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+          06 59 45 83 80
+        </a>
+        <a class="btn btn-ghost" href="#devis">Recevoir mon devis</a>
+      </div>
+      <p class="hero-prix"><a href="#prix">Combien ça coûte, chez vous&nbsp;?</a> Ce qui fait varier le prix, expliqué sans détour.</p>
+      <p class="hero-micro">Réponse le jour même du lundi au samedi, 8 h – 19 h. Le formulaire, lui, reste ouvert 7 j/7 : on rappelle dès la réouverture.</p>
+
+      <figure class="hero-shot">
+        <img src="../../assets/img/nettoyage-gouttiere-jet.jpg" alt="Nettoyage d'une gouttière encombrée" width="1400" height="934" fetchpriority="high" />
+        <figcaption>Nettoyage d'une gouttière chargée de feuilles et de mousses. Photo d'illustration du métier.</figcaption>
+      </figure>
+    </div>
+
+    <div class="hero-form-col">
+      <div class="hero-panel" style="background-image:url('../../assets/img/nettoyage-gouttiere-jet.jpg')" role="img" aria-label="Nettoyage d'une gouttière encombrée"></div>
+      <div class="form-card" id="devis">
+        <div class="form-head">
+          <b>Votre devis gouttières</b>
+          <span>Visite sur place et chiffrage gratuits, réponse sous 24 h ouvrées.</span>
+        </div>
+        <div class="form-body">
+          <form class="js-devis" id="devis-form" novalidate>
+            <div class="form-success" role="status">Merci, votre demande est partie. On vous rappelle sous 24 h ouvrées pour convenir de la visite.</div>
+            <div class="form-error" role="alert">L'envoi n'a pas abouti. Appelez-nous au 06 59 45 83 80, c'est plus rapide.</div>
+            <div class="form-fields">
+              <input type="hidden" name="access_key" value="REMPLACER-PAR-LA-CLE-WEB3FORMS" />
+              <input type="hidden" name="gclid" value="" />
+              <input type="hidden" name="source" value="" />
+              <input type="hidden" name="campagne" value="" />
+              <input type="hidden" name="mot_cle" value="" />
+              <input type="hidden" name="page" value="" />
+              <input class="hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+              <div class="field">
+                <label for="f-nom">Votre nom</label>
+                <input id="f-nom" name="nom" type="text" autocomplete="name" required />
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-tel">Téléphone</label>
+                  <input id="f-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required />
+                </div>
+                <div class="field">
+                  <label for="f-ville">Commune</label>
+                  <input id="f-ville" name="ville" type="text" placeholder="Évry, Étampes, Massy…" required />
+                </div>
+              </div>
+              <div class="field">
+                <label for="f-besoin">Votre besoin</label>
+                <select id="f-besoin" name="besoin"><option>Nettoyage de gouttières et descentes</option>
+            <option>Gouttière qui fuit ou qui déborde</option>
+            <option>Remplacement de gouttières</option>
+            <option>Pose de gouttières neuves</option>
+            <option>Descente d'eau pluviale bouchée ou cassée</option>
+            <option>Protections anti-feuilles / crapaudines</option></select>
+              </div>
+              <div class="field">
+                <label for="f-msg">Précisions (facultatif)</label>
+                <textarea id="f-msg" name="message" placeholder="Surface approximative, étage, accès, délai souhaité…"></textarea>
+              </div>
+              <button class="btn btn-call btn-full" type="submit">Demander mon devis gratuit</button>
+              <p class="form-legal">Devis et déplacement gratuits, sans engagement. Vos coordonnées servent uniquement à vous rappeler.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- barre de preuves -->
+  <div class="trust">
+    <div class="wrap trust-in">
+      <div class="trust-it"><b>Entreprise créée en 2003</b><span>SIREN 445 061 526, artisan déclaré</span></div>
+      <div class="trust-it"><b>Équipe présente en Essonne</b><span>Intervention sur tout le 91</span></div>
+      <div class="trust-it"><b>Devis et visite gratuits</b><span>Chiffrage ferme, aucun engagement</span></div>
+      <div class="trust-it"><b>Toit, façade, charpente</b><span>Un seul interlocuteur du haut en bas</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= L'ENJEU ================= -->
+<section class="sec sec-dark" id="pourquoi">
+  <div class="wrap">
+    <div class="split split-wide">
+      <div>
+        <p class="kicker is-light">Le petit poste qui coûte cher</p>
+        <h2>Une gouttière bouchée <em>abîme la façade et les fondations.</em></h2>
+        <p>En Essonne, les grands arbres qui font le charme des pavillons remplissent les gouttières chaque automne. L'eau déborde, saigne le long de la façade, marque l'enduit et sature le sol au pied du mur. Deux ou trois hivers suffisent pour que ça se voie de l'intérieur.</p>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>L'eau qui déborde lave la façade</b> · toujours au même endroit : la traînée verte ou noire sur le mur commence presque toujours par une gouttière</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>La rive et la sablière prennent l'eau</b> · un débordement chronique mouille le bois de rive, qui pourrit sans qu'on le voie</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Le pied de mur se sature</b> · l'eau qui tombe au pied du mur au lieu de partir à l'égout finit par remonter dans la maçonnerie</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Le gel finit le travail</b> · l'eau stagnante dans une gouttière déformée gèle, dilate, descelle les crochets et fend le zinc</span></li></ul>
+        <div class="warn"><p><b>C'est le poste le moins cher à entretenir et le plus cher à négliger.</b> Un nettoyage annuel coûte une fraction de ce que coûte une reprise de rive ou d'enduit.</p></div>
+      </div>
+      <figure class="frame frame-tall">
+        <img src="../../assets/img/nettoyage-gouttiere-jet.jpg" alt="Gouttière chargée de feuilles et de dépôts" loading="lazy" width="1400" height="1750" />
+        <figcaption>Une gouttière pleine ne déborde pas seulement : elle pèse et descelle ses crochets.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LA PRESTATION ================= -->
+<section class="sec" id="prestation">
+  <div class="wrap">
+    <div class="split">
+      <figure class="frame">
+        <img src="../../assets/img/couvreur-faitage-ciel.jpg" alt="Artisan intervenant en bord de toiture" loading="lazy" width="1400" height="1050" />
+        <figcaption>La zinguerie se joue en bord de toit : c'est aussi là qu'on voit l'état des rives.</figcaption>
+      </figure>
+      <div>
+        <p class="kicker">Ce qu'on fait</p>
+        <h2>On nettoie, on répare, <em>on ne remplace qu'au bon moment.</em></h2>
+        <p style="color:var(--ink-2);margin-top:.9rem">Beaucoup de gouttières qu'on nous demande de changer n'ont besoin que d'un nettoyage et d'une reprise de pente. On vous le dira, même si ça réduit la facture.</p>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Nettoyage complet</b> · gouttières, chéneaux, naissances et descentes, avec contrôle de l'écoulement à l'eau avant de partir</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Reprise de pente et de fixations</b> · une gouttière qui stagne est presque toujours une gouttière qui a bougé : on la remet à la bonne pente</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Réparation des points de fuite</b> · raccords, soudures, angles, naissances : les fuites se concentrent toujours aux mêmes endroits</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Remplacement</b> · en zinc, aluminium ou PVC, sur mesure, avec descentes et raccordement à l'existant</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Protections anti-feuilles</b> · crapaudines et grilles quand la maison est sous les arbres : ça espace nettement les nettoyages</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Contrôle des rives et du débord</b> · on regarde le bois et la couverture juste au-dessus, là où le débordement a déjà pu faire des dégâts</span></li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COMMENT ÇA SE PASSE ================= -->
+<section class="sec sec-tint" id="deroule">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Comment ça se passe</p>
+      <h2>Du premier appel à la <em>fin de chantier.</em></h2>
+      <p>Aucune surprise : vous savez à l'avance qui vient, quand, et ce que vous payez.</p>
+    </div>
+    <div class="steps"><div class="step"><span class="step-n">01</span><h3>Vous appelez</h3><p>Ce que vous constatez : ça déborde, ça goutte, ça ne s'écoule plus. Linéaire approximatif et hauteur suffisent pour cadrer.</p></div>
+      <div class="step"><span class="step-n">02</span><h3>On vient voir</h3><p>État du linéaire, des crochets, des descentes et du bois de rive. Photos de ce qu'on relève.</p></div>
+      <div class="step"><span class="step-n">03</span><h3>Le devis</h3><p>Nettoyage, réparation ou remplacement : les options sont chiffrées séparément pour que vous puissiez arbitrer.</p></div>
+      <div class="step"><span class="step-n">04</span><h3>L'intervention</h3><p>Souvent une demi-journée pour un nettoyage, une journée pour un remplacement. Test d'écoulement avant de partir.</p></div></div>
+  </div>
+</section>
+
+<!-- ================= RÉSULTAT / AVANT-APRÈS ================= -->
+<section class="sec" id="resultat">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Le résultat</p>
+      <h2>Le résultat se vérifie <em>à l'eau, pas à l'œil.</em></h2>
+      <p>Une gouttière propre en photo peut encore mal s'écouler. On termine toujours par un essai à l'eau, descente par descente.</p>
+    </div>
+    <div class="ba">
+      <figure>
+        <img src="../../assets/img/nettoyage-gouttiere-jet.jpg" alt="Gouttière encombrée avant nettoyage" loading="lazy" width="1400" height="1050" />
+        <span class="ba-tag is-before">Avant</span>
+        <figcaption>Avant : feuilles, mousses et dépôts bloquent la naissance et la descente.</figcaption>
+      </figure>
+      <figure>
+        <img src="../../assets/img/toit-tuiles-cheminee.jpg" alt="Bord de toiture dégagé après intervention" loading="lazy" width="1400" height="1050" />
+        <span class="ba-tag is-after">Après</span>
+        <figcaption>Après : écoulement libre, pente reprise, fixations contrôlées.</figcaption>
+      </figure>
+    </div>
+    <p class="ba-note">Photos d'illustration du métier, et non de chantiers VBR : elles seront remplacées par vos propres avant / après dès que vous nous les fournirez.</p>
+  </div>
+</section>
+
+<!-- ================= BUDGET ================= -->
+<section class="sec sec-tint" id="prix">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Combien ça coûte</p>
+      <h2>Le prix se compte au mètre linéaire, <em>et à la hauteur.</em></h2>
+      <p>C'est l'un des rares postes où l'ordre de grandeur est simple à donner. Le chiffre exact, lui, dépend de l'accès et de ce qu'on trouve en montant.</p>
+    </div>
+    <div class="budget">
+      <p style="font-weight:600;margin:0">Ce qui fait varier le prix, chez vous :</p>
+      <div class="budget-grid"><div class="bf"><b>Le linéaire</b><span>le nombre de mètres de gouttière et le nombre de descentes forment la base du calcul.</span></div>
+        <div class="bf"><b>La hauteur et l'accès</b><span>plain-pied à l'échelle, ou étage avec échafaudage ou nacelle : c'est le poste qui fait varier le plus.</span></div>
+        <div class="bf"><b>Le matériau</b><span>PVC, zinc ou aluminium : trois budgets et trois durées de vie différentes, à choisir selon la maison.</span></div>
+        <div class="bf"><b>L'état de la rive</b><span>si le bois qui porte les crochets est abîmé, il faut le reprendre avant de fixer quoi que ce soit.</span></div></div>
+      <div class="budget-foot">
+        <p>Nettoyage, réparation et remplacement sont chiffrés séparément sur le même devis : vous voyez précisément ce que coûte chaque scénario, et rien ne vous engage.</p>
+        <a class="btn btn-call" href="#devis">Obtenir mon chiffrage</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BANDE CTA PHOTO ================= -->
+<section class="band" style="background-image:url('../../assets/img/pavillon-brique-idf.jpg')">
+  <div class="wrap band-in">
+    <h2>La trace sur votre façade vient sûrement d'en haut.</h2>
+    <p>Une traînée verte ou noire sur un mur commence presque toujours par une gouttière qui déborde. On monte voir, et on vous dit exactement d'où ça vient.</p>
+    <div class="band-cta">
+      <a class="btn btn-call" href="tel:+33659458380">Appeler le 06 59 45 83 80</a>
+      <a class="btn btn-ghost" href="#devis">Demander un devis</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= AVIS ================= -->
+<section class="sec" id="avis">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Ce qu'en disent les clients</p>
+      <h2>Des chantiers <em>qui se racontent tout seuls.</em></h2>
+    </div>
+    <div class="avis"><blockquote><p>« Professionnel réactif et très compréhensif. Il explique patiemment comment il travaille. »</p><footer><b>André Arcouet</b> · Brétigny-sur-Orge</footer></blockquote>
+      <blockquote><p>« Très professionnel. Pose de gouttières, travail de qualité et à l'écoute de toutes vos questions. Équipe sérieuse et courtoise. »</p><footer><b>Johnny Carlson</b> · Massy</footer></blockquote>
+      <blockquote><p>« Très professionnel. Rénovation de notre toiture faite avec sérieux, travail rigoureux entrepris à l'écoute de son client. »</p><footer><b>Morgana Hervieux</b> · Guingamp</footer></blockquote>
+      <blockquote><p>« J'avais besoin de remplacer quelques tuiles. Très satisfait de leur réponse rapide et amicale, super équipe. »</p><footer><b>Pascal Dubois</b> · Langueux</footer></blockquote></div>
+    <p class="ba-note">Avis publiés par VBR Nettoyage sur vbrnettoyage.fr.</p>
+  </div>
+</section>
+
+<!-- ================= ZONE ================= -->
+<section class="sec sec-tint" id="zones">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <p class="kicker">Zone d'intervention</p>
+        <h2>Une équipe qui intervient <em>partout dans le 91.</em></h2>
+        <p style="color:var(--ink-2);margin-top:.9rem">De la vallée de l'Orge au Hurepoix, de Massy et Palaiseau au nord jusqu'à Étampes et Dourdan au sud, en passant par Évry, Corbeil et Brétigny. Un déplacement, un devis, aucun frais.</p>
+        <div class="zones"><span class="zone zone-main">Évry-Courcouronnes</span>
+          <span class="zone zone-main">Étampes</span>
+          <span class="zone zone-main">Massy</span>
+          <span class="zone">Brétigny-sur-Orge</span>
+          <span class="zone">Palaiseau</span>
+          <span class="zone">Corbeil-Essonnes</span>
+          <span class="zone">Arpajon</span>
+          <span class="zone">Dourdan</span>
+          <span class="zone">Savigny-sur-Orge</span>
+          <span class="zone">Longjumeau</span>
+          <span class="zone">Sainte-Geneviève-des-Bois</span>
+          <span class="zone">Athis-Mons</span>
+          <span class="zone">Draveil</span>
+          <span class="zone">Montgeron</span>
+          <span class="zone">Yerres</span>
+          <span class="zone">Mennecy</span>
+          <span class="zone">Milly-la-Forêt</span>
+          <span class="zone">La Ferté-Alais</span>
+          <span class="zone">Ballancourt-sur-Essonne</span>
+          <span class="zone">Les Ulis</span>
+          <span class="zone">Orsay</span>
+          <span class="zone">Limours</span></div>
+      </div>
+      <figure class="frame">
+        <img src="../../assets/img/pavillon-brique-idf.jpg" alt="Pavillon francilien en brique avec toiture en tuiles" loading="lazy" width="1400" height="1050" />
+        <figcaption>Pavillons des années 1960 à 1990 : tuile mécanique, annexes en fibrociment, gouttières zinc.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="kicker">Les questions qu'on nous pose</p>
+      <h2>Ce qu'il faut savoir <em>avant de nous appeler.</em></h2>
+    </div>
+    <div class="faq"><details><summary>Combien coûte un nettoyage de gouttières ?</summary><p>Il se chiffre au mètre linéaire, et l'accès pèse beaucoup dans le total. Un plain-pied accessible à l'échelle et un étage nécessitant une nacelle n'ont pas le même coût. La visite et le devis sont gratuits.</p></details>
+      <details><summary>À quelle fréquence faut-il les nettoyer ?</summary><p>Une fois par an après la chute des feuilles suffit dans la plupart des cas. Sous des arbres, deux passages sont souvent nécessaires : un à l'automne, un au printemps. Des crapaudines et des grilles espacent nettement ces interventions.</p></details>
+      <details><summary>Zinc, aluminium ou PVC : que choisir ?</summary><p>Le zinc reste la référence sur le bâti ancien pour sa durée de vie et son aspect. L'aluminium est un bon compromis, léger et sans soudure. Le PVC est le plus économique, mais il supporte mal les fortes chaleurs et les chocs. On vous oriente selon la maison, l'exposition et le budget.</p></details>
+      <details><summary>Ma gouttière fuit à un raccord : faut-il tout changer ?</summary><p>Pas forcément. Une fuite localisée sur un raccord, un angle ou une soudure se reprend souvent très bien. Le remplacement s'impose quand le linéaire est déformé, percé par la corrosion ou que les crochets ne tiennent plus dans un bois de rive abîmé.</p></details>
+      <details><summary>Intervenez-vous sur les descentes bouchées ?</summary><p>Oui. Descente, coude, naissance et raccordement au regard font partie du contrôle systématique, et on termine toujours par un essai à l'eau pour vérifier que ça part vraiment.</p></details>
+      <details><summary>Pouvez-vous nettoyer les gouttières pendant le démoussage du toit ?</summary><p>Oui, et c'est l'ordre logique : on démousse d'abord, puis on nettoie les gouttières, puisque le démoussage y envoie forcément des débris. Groupées, les deux interventions évitent un second déplacement.</p></details></div>
+  </div>
+</section>
+
+<!-- ================= CTA FINAL ================= -->
+<section class="sec final" id="contact">
+  <div class="wrap final-grid">
+    <div>
+      <p class="kicker is-light">Votre devis</p>
+      <h2>Dites-nous ce que fait votre gouttière.</h2>
+      <p style="margin-top:.9rem">Elle déborde, elle goutte, elle ne s'écoule plus, ou vous voulez simplement l'entretien annuel : décrivez-le, on vous rappelle sous 24 h ouvrées.</p>
+      <div class="call-card">
+        <span>Plus rapide : au téléphone</span>
+        <a href="tel:+33659458380">06 59 45 83 80</a>
+        <small>Du lundi au samedi, 8 h – 19 h. Si on ne décroche pas, c'est qu'on est sur un toit : laissez un message, on rappelle.</small>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <div class="form-head">
+        <b>Décrivez votre chantier</b>
+        <span>Réponse sous 24 h ouvrées, visite et devis gratuits.</span>
+      </div>
+      <div class="form-body">
+        <form class="js-devis" id="devis-form-bas" novalidate>
+          <div class="form-success" role="status">Merci, votre demande est partie. On vous rappelle sous 24 h ouvrées pour convenir de la visite.</div>
+          <div class="form-error" role="alert">L'envoi n'a pas abouti. Appelez-nous au 06 59 45 83 80, c'est plus rapide.</div>
+          <div class="form-fields">
+            <input type="hidden" name="access_key" value="REMPLACER-PAR-LA-CLE-WEB3FORMS" />
+            <input type="hidden" name="gclid" value="" />
+            <input type="hidden" name="source" value="" />
+            <input type="hidden" name="campagne" value="" />
+            <input type="hidden" name="mot_cle" value="" />
+            <input type="hidden" name="page" value="" />
+            <input class="hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <div class="field-row">
+              <div class="field">
+                <label for="b-nom">Votre nom</label>
+                <input id="b-nom" name="nom" type="text" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="b-tel">Téléphone</label>
+                <input id="b-tel" name="tel" type="tel" inputmode="tel" autocomplete="tel" required />
+              </div>
+            </div>
+            <div class="field-row">
+              <div class="field">
+                <label for="b-ville">Commune</label>
+                <input id="b-ville" name="ville" type="text" placeholder="Évry, Étampes, Massy…" required />
+              </div>
+              <div class="field">
+                <label for="b-besoin">Votre besoin</label>
+                <select id="b-besoin" name="besoin"><option>Nettoyage de gouttières et descentes</option>
+            <option>Gouttière qui fuit ou qui déborde</option>
+            <option>Remplacement de gouttières</option>
+            <option>Pose de gouttières neuves</option>
+            <option>Descente d'eau pluviale bouchée ou cassée</option>
+            <option>Protections anti-feuilles / crapaudines</option></select>
+              </div>
+            </div>
+            <div class="field">
+              <label for="b-msg">Précisions (facultatif)</label>
+              <textarea id="b-msg" name="message" placeholder="Surface approximative, étage, accès, délai souhaité…"></textarea>
+            </div>
+            <button class="btn btn-call btn-full" type="submit">Envoyer ma demande</button>
+            <p class="form-legal">Devis et déplacement gratuits, sans engagement. Vos coordonnées servent uniquement à vous rappeler.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="ftr">
+  <div class="wrap">
+    <svg viewBox="0 0 64 40" aria-hidden="true"><path d="M4 33 L26 8 L31 13.5 L31 4 L37 4 L37 20 L47 32 L60 32" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="square"/></svg>
+    <div class="ftr-grid">
+      <div>
+        <b>VBR Nettoyage</b>
+        Couverture, nettoyage et hydrofugation de toiture, façade, charpente, zinguerie et désamiantage. Entreprise créée en 2003.
+      </div>
+      <div>
+        <b>Nous joindre</b>
+        <a href="tel:+33659458380">06 59 45 83 80</a><br />
+        <a href="mailto:vbr.paca@gmail.com">vbr.paca@gmail.com</a><br />
+        5 rue Simone Veil, 22400 Lamballe-Armor
+      </div>
+      <div>
+        <b>Zone d'intervention</b>
+        Évry-Courcouronnes, Étampes, Massy, Brétigny-sur-Orge, Palaiseau, Corbeil-Essonnes, Arpajon, Dourdan et tout le département de l'Essonne (91).
+      </div>
+    </div>
+    <div class="ftr-bot">
+      <span>© <span id="year">2026</span> VBR Nettoyage · SIRET 445 061 526 00015 · TVA FR57445061526</span>
+      <span><a href="https://www.vbrnettoyage.fr/mentions-legales" rel="nofollow">Mentions légales et politique de confidentialité</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- barre d'appel mobile -->
+<div class="callbar">
+  <a class="btn btn-call" href="tel:+33659458380">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+    Appeler
+  </a>
+  <a class="btn btn-ghost" href="#devis">Devis gratuit</a>
+</div>
+
+<script src="../../assets/script.js?v=1" defer></script>
+</body>
+</html>
