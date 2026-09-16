@@ -431,3 +431,16 @@ p:last-child{margin-bottom:0}
   .hero h1{max-width:20ch}
 }
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Sur téléphone, une photo en 4/5 occupe un écran entier à elle seule : le
+   lecteur scrolle sans rien apprendre et décroche. On les aplatit, la photo
+   reste lisible et on économise plusieurs écrans sans retirer un mot. */
+@media (max-width:760px){
+  .frame img{aspect-ratio:16/10}
+  .frame-tall img{aspect-ratio:4/3}
+  .ba img{aspect-ratio:16/10}
+  /* La photo de la section « zone d'intervention » est purement décorative :
+     elle n'apporte aucun argument et coûte un tiers d'écran au moment où le
+     lecteur est déjà loin. Sur téléphone, on garde la phrase et les communes. */
+  #zones .frame{display:none}
+}
