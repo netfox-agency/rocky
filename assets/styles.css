@@ -485,9 +485,13 @@ p:last-child{margin-bottom:0}
 
 /* Cibles tactiles : les champs tombaient à 41 px, les boutons du
    bandeau cookies à 33 px, les contacts du pied à 15 px. */
-@media (max-width:760px){
-  .field input,.field select{min-height:46px}
-  .cookiebar button{min-height:44px}
+/* 46 px partout, pas seulement sous 760 : une tablette tactile passe
+   au-dessus du point de rupture et gardait des champs de 41 px. */
+.field input,.field select{min-height:46px}
+.cookiebar button{min-height:44px}
+/* Le pied de page : seulement sur écran tactile, sinon on ajoute de la
+   hauteur pour rien là où le pointeur est précis. */
+@media (hover:none){
   .ftr a[href^="tel:"],.ftr a[href^="mailto:"]{
     display:inline-flex;align-items:center;min-height:44px;
   }
