@@ -146,7 +146,10 @@ p:last-child{margin-bottom:0}
 .hero-prix a:hover{border-bottom-color:var(--cuivre)}
 
 /* photo du hero : le sujet reste dégagé, le texte vit dans la bande basse */
-.hero-shot{position:relative;margin-bottom:1.4rem}
+/* margin:0 obligatoire : la feuille de style du navigateur applique
+   `figure{margin:1em 40px}`. Sans ce reset la photo du hero est 80 px
+   plus étroite que la colonne et décalée de 40 px du bord du titre. */
+.hero-shot{position:relative;margin:0 0 1.4rem}
 .hero-shot img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:var(--r)}
 .hero-shot figcaption{
   position:absolute;left:0;right:0;bottom:0;padding:1.5rem .95rem .7rem;
@@ -443,4 +446,55 @@ p:last-child{margin-bottom:0}
      elle n'apporte aucun argument et coûte un tiers d'écran au moment où le
      lecteur est déjà loin. Sur téléphone, on garde la phrase et les communes. */
   #zones .frame{display:none}
+}
+
+/* ============================================================
+   Finitions écrans étroits (revue visuelle 21/09/2026).
+   Ce bloc reste en fin de feuille : à spécificité égale, la
+   dernière règle gagne.
+   ============================================================ */
+
+/* La signature du logo passait sur deux lignes sous 430 px et laissait
+   un « · » orphelin en fin de première ligne. */
+.brand-sub{white-space:nowrap}
+@media (max-width:430px){
+  .brand-sub{font-size:.58rem;letter-spacing:.09em}
+  .brand svg{width:36px;height:23px}
+}
+
+/* La barre de preuve en 2 colonnes ne laissait que 144 px de texte :
+   « Lamballe-Armor » se coupait en deux. Une colonne, une preuve. */
+@media (max-width:480px){
+  .trust-in{grid-template-columns:1fr}
+  .trust-it{border-left:0;padding:.95rem 0}
+  .trust-it:nth-child(n+2){border-top:1px solid var(--line)}
+}
+
+/* Deux boutons empilés de largeurs différentes lisent « inachevé ».
+   Le poids visuel se joue sur le remplissage, pas sur la largeur. */
+@media (max-width:560px){
+  .hero-cta{display:grid;grid-template-columns:1fr;gap:.6rem}
+  .hero-cta .btn{width:100%}
+}
+
+/* Cibles tactiles : les champs tombaient à 41 px, les boutons du
+   bandeau cookies à 33 px, les contacts du pied à 15 px. */
+@media (max-width:760px){
+  .field input,.field select{min-height:46px}
+  .cookiebar button{min-height:44px}
+  .ftr a[href^="tel:"],.ftr a[href^="mailto:"]{
+    display:inline-flex;align-items:center;min-height:44px;
+  }
+}
+/* Le lockup du logo est un lien : il lui faut la même hauteur de cible. */
+.brand{min-height:44px}
+
+/* Le bandeau cookies et la barre d'appel mangeaient 177 px sur 844, et le
+   bouton principal du hero tombait derrière. Les deux boutons remontent sur
+   la ligne du texte : le bandeau passe de ~110 px à ~70 px. */
+@media (max-width:760px){
+  .cookiebar{flex-wrap:nowrap;gap:.65rem}
+  .cookiebar p{flex:1 1 auto;min-width:0}
+  .cookiebar-acts{width:auto;flex:none;margin-left:0}
+  .cookiebar button{flex:none;padding:.5rem .7rem;font-size:.82rem;white-space:nowrap}
 }
