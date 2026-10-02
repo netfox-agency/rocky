@@ -35,7 +35,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&display=swap" />
 <link rel="preload" as="image" href="../../assets/img/couvreur-faitage-ciel.jpg" fetchpriority="high" />
-<link rel="stylesheet" href="../../assets/styles.css?v=4" />
+<link rel="stylesheet" href="../../assets/styles.css?v=5" />
 
 <!-- ---------- Google Ads : gtag, Consent Mode v2, conversions ----------
      Tout reste inerte tant qu'un identifiant contient XXXX (script.js le teste). -->
@@ -72,7 +72,9 @@ window.ADS_CONVERSION_APPEL = 'AW-18438830933/XsgfCJmWx_EcENX2qNhE';
 /* Accroche alignée sur la requête tapée (voir script.js § 6). */
 window.LP_VILLES = ["Évry","Évry-Courcouronnes","Courcouronnes","Étampes","Massy","Brétigny-sur-Orge","Brétigny","Palaiseau","Corbeil-Essonnes","Corbeil","Arpajon","Dourdan","Savigny-sur-Orge","Longjumeau","Sainte-Geneviève-des-Bois","Athis-Mons","Draveil","Montgeron","Yerres","Mennecy","Milly-la-Forêt","Les Ulis","Orsay","Limours"];
 window.LP_MATCH = {
-  urgence:   {h1:"Fuite de toiture : <em>on vient voir, aujourd'hui si possible.</em>",
+  couvreur:  {h1:"Couvreur <em>en Essonne</em>",
+              sub:"Fuite, tuiles cassées, faîtage, charpente. On monte voir, photos à l'appui, et le diagnostic est gratuit. Réponse le jour même du lundi au samedi."},
+  urgence:   {h1:"Fuite de toiture : <em>on monte voir aujourd'hui.</em>",
               sub:"Mise en sécurité, bâchage provisoire, recherche du point d'entrée. Appelez, c'est le plus rapide.",
               urgent:"Fuite en cours ? Appelez-nous directement, on cadre l'urgence au téléphone."},
   prix:      {h1:"Le prix de vos travaux de toiture, <em>chiffré après diagnostic.</em>",
@@ -83,7 +85,8 @@ window.LP_MATCH = {
               sub:"Renfort de panne, remplacement de chevron, traitement du bois. Une couverture neuve ne se pose pas sur une charpente douteuse."},
   velux:     {h1:"Pose de fenêtre de toit, <em>étanchéité comprise.</em>",
               sub:"Le Velux se joue sur le raccord : c'est là qu'on met le soin, pas dans la vitre."},
-  besoin:    {urgence:"Fuite ou infiltration (urgent)", prix:"Remplacement de tuiles ou d'ardoises",
+  besoin:    {couvreur:"Je ne sais pas encore, je veux un diagnostic",
+              urgence:"Fuite ou infiltration (urgent)", prix:"Remplacement de tuiles ou d'ardoises",
               renovation:"Remaniage de couverture", charpente:"Charpente (réparation, renfort, traitement)",
               velux:"Pose de fenêtre de toit Velux", toiture:"Remplacement de tuiles ou d'ardoises"}
 };
@@ -113,7 +116,7 @@ window.LP_MATCH = {
 }
 </script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Combien coûte une rénovation de toiture ?","acceptedAnswer":{"@type":"Answer","text":"Tout dépend de ce dont votre toit a réellement besoin. Une reprise ponctuelle et une réfection complète n'appartiennent pas au même ordre de grandeur. Le seul moyen honnête de répondre, c'est de monter voir : le diagnostic et le devis sont gratuits."}},{"@type":"Question","name":"Vous intervenez en urgence en cas de fuite ?","acceptedAnswer":{"@type":"Answer","text":"Oui, on cadre l'urgence dès l'appel. Une mise en sécurité provisoire, bâchage compris, permet souvent d'arrêter les dégâts pendant que la réparation définitive s'organise."}},{"@type":"Question","name":"Réparer ou refaire ?","acceptedAnswer":{"@type":"Answer","text":"La règle simple : si le matériau est encore sain et que seuls des points singuliers ont lâché, on répare. S'il est poreux, feuilleté ou en fin de vie sur l'ensemble des pans, réparer revient à repousser le problème d'un ou deux hivers. On vous montre les photos et vous décidez."}},{"@type":"Question","name":"Travaillez-vous l'ardoise et la tuile ?","acceptedAnswer":{"@type":"Answer","text":"Oui. En Essonne, la tuile mécanique et la tuile plate dominent, avec de l'ardoise sur les bâtis plus anciens. On travaille les deux, et on repose à l'identique pour conserver l'aspect de la maison."}},{"@type":"Question","name":"Prenez-vous en charge la charpente ?","acceptedAnswer":{"@type":"Answer","text":"Oui. Renfort de panne, remplacement de chevron, traitement curatif du bois : c'est indissociable du travail de couverture. On ne repose jamais une couverture neuve sur une charpente dont l'état n'a pas été vérifié."}},{"@type":"Question","name":"Y a-t-il des aides pour refaire une toiture ?","acceptedAnswer":{"@type":"Answer","text":"Une réfection seule n'ouvre pas droit à MaPrimeRénov'. En revanche, l'isolation des combles réalisée à cette occasion peut être éligible, et la TVA réduite s'applique en général aux logements de plus de deux ans. On vous indique ce qui s'applique à votre situation au moment du devis, sans rien promettre à votre place."}}]}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Combien coûte une réparation de toiture ?","acceptedAnswer":{"@type":"Answer","text":"Une reprise ponctuelle et une réfection complète n'ont pas le même ordre de grandeur. Le seul moyen honnête de répondre est de monter voir : diagnostic et devis gratuits."}},{"@type":"Question","name":"Vous intervenez en urgence en cas de fuite ?","acceptedAnswer":{"@type":"Answer","text":"Oui, on cadre l'urgence dès l'appel. Un bâchage provisoire arrête les dégâts pendant que la réparation s'organise."}},{"@type":"Question","name":"Réparer ou refaire ?","acceptedAnswer":{"@type":"Answer","text":"Si le matériau est sain et que seuls des points singuliers ont lâché, on répare. S'il est poreux ou en fin de vie sur tous les pans, réparer ne fait que repousser le problème d'un ou deux hivers. On vous montre les photos, vous décidez."}},{"@type":"Question","name":"Travaillez-vous l'ardoise et la tuile ?","acceptedAnswer":{"@type":"Answer","text":"Oui. En Essonne, la tuile mécanique et la tuile plate dominent, avec de l'ardoise sur les bâtis plus anciens. On travaille les deux, et on repose à l'identique pour conserver l'aspect de la maison."}}]}
 </script>
 </head>
 
@@ -146,7 +149,7 @@ window.LP_MATCH = {
   <div class="wrap hero-grid">
 
     <div class="hero-copy">
-      <p class="kicker">Couverture · Charpente · Étanchéité</p>
+      <p class="kicker">Couverture · Charpente · Zinguerie</p>
       <div class="hero-chips">
         <span class="hero-loc">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
@@ -157,8 +160,8 @@ window.LP_MATCH = {
           Artisan installé depuis 2003
         </span>
       </div>
-      <h1>On répare ce qui peut l'être, <em>on refait ce qui doit l'être.</em></h1>
-      <p class="hero-sub">Fuite, tuiles cassées, faîtage descellé, liteaux fatigués : on monte voir avant de parler chiffres, et on vous dit franchement si une réparation suffit ou s'il faut envisager la réfection.</p>
+      <h1>Couvreur <em>en Essonne</em></h1>
+      <p class="hero-sub">Fuite, tuiles cassées, faîtage descellé, charpente fatiguée. On monte voir, photos à l'appui, et on vous dit franchement si une réparation suffit. Diagnostic et devis gratuits.</p>
       <ul class="hero-points"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span>Diagnostic sur le toit, photos à l'appui, avant tout devis</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span>Ardoise, tuile mécanique, tuile plate, zinc : on travaille à l'identique</span></li>
         <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span>Couverture, charpente et zinguerie : un seul interlocuteur</span></li></ul>
@@ -254,11 +257,11 @@ window.LP_MATCH = {
       <div>
         <p class="kicker is-light">Ce qu'une toiture ne dit pas</p>
         <h2>Quand la tache apparaît au plafond, <em>l'eau est là depuis des mois.</em></h2>
-        <p>En Essonne, ce sont surtout les couvertures des années 1960 à 1980 qui arrivent en fin de course : tuiles mécaniques poreuses, liteaux fatigués, solins de cheminée fendus. L'eau passe par un point minuscule, court le long d'une panne, et ressort à trois mètres de là.</p>
-        <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Une fuite ne coule pas à la verticale</b> · l'eau circule sur la charpente : le point d'entrée n'est presque jamais au-dessus de la tache</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Le bois travaille en silence</b> · une panne humide plusieurs hivers de suite perd sa résistance sans changer d'aspect vu d'en bas</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Les points faibles sont toujours les mêmes</b> · solins de cheminée, noues, rives, faîtage : c'est là qu'on cherche en premier</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Réparer tôt coûte une fraction de refaire</b> · une reprise ponctuelle se compte en centaines d'euros, une réfection en dizaines de milliers</span></li></ul>
+        <p>En Essonne, les couvertures des années 1960 à 1980 arrivent en fin de course : tuiles poreuses, liteaux fatigués, solins fendus. L'eau passe par un point minuscule et ressort à trois mètres de là.</p>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Une fuite ne coule pas à la verticale</b> · le point d'entrée n'est presque jamais au-dessus de la tache</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Le bois travaille en silence</b> · une panne humide plusieurs hivers perd sa résistance sans changer d'aspect vu d'en bas</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Les points faibles sont toujours les mêmes</b> · solins, noues, rives, faîtage : c'est là qu'on cherche en premier</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Réparer tôt coûte bien moins cher</b> · une reprise se compte en centaines d'euros, une réfection en dizaines de milliers</span></li></ul>
         <div class="warn"><p><b>Une infiltration ne se stabilise jamais.</b> Elle mouille la charpente, puis l'isolant, puis le plafond. Plus le diagnostic tarde, plus la part de charpente dans la facture augmente.</p></div>
       </div>
       <figure class="frame frame-tall">
@@ -280,12 +283,12 @@ window.LP_MATCH = {
       <div>
         <p class="kicker">Ce qu'on fait</p>
         <h2>Du remplacement d'une ardoise <em>à la réfection complète.</em></h2>
-        <p style="color:var(--ink-2);margin-top:.9rem">On ne vend pas une toiture neuve à quelqu'un qui a besoin de trois tuiles. Le diagnostic sur le toit sert exactement à ça : savoir ce qui est nécessaire.</p>
-        <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Recherche et reprise de fuite</b> · on remonte le trajet de l'eau jusqu'au point d'entrée réel, puis on traite la cause</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Remplacement d'éléments</b> · tuiles, ardoises, crochets, closoirs, remplacés à l'identique pour ne pas dénaturer la toiture</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Remaniage</b> · la couverture est déposée, les liteaux repris et les éléments sains reposés : la solution intermédiaire quand la réfection n'est pas justifiée</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Réfection complète</b> · quand le matériau est en fin de vie, on refait la couverture avec l'écran sous-toiture et la ventilation qui vont avec</span></li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Charpente</b> · renfort de panne, remplacement de chevron, traitement du bois : on ne repose jamais une couverture sur une charpente douteuse</span></li>
+        <p style="color:var(--ink-2);margin-top:.9rem">On ne vend pas une toiture neuve à quelqu'un qui a besoin de trois tuiles. Le diagnostic sert à ça : savoir ce qui est nécessaire.</p>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Recherche et reprise de fuite</b> · on remonte le trajet de l'eau jusqu'au point d'entrée, puis on traite la cause</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Remplacement d'éléments</b> · tuiles, ardoises, crochets, closoirs, reposés à l'identique</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Remaniage</b> · couverture déposée, liteaux repris, éléments sains reposés : la solution intermédiaire</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Réfection complète</b> · quand le matériau est en fin de vie, écran sous-toiture et ventilation compris</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Charpente</b> · renfort de panne, remplacement de chevron, traitement du bois</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12 5.5 5.5L20 6.5"/></svg><span><b>Solins, faîtage, zinguerie</b> · les points singuliers, là où 80 % des fuites commencent</span></li></ul>
       </div>
     </div>
@@ -308,45 +311,24 @@ window.LP_MATCH = {
 </section>
 
 <!-- ================= RÉSULTAT / AVANT-APRÈS ================= -->
-<section class="sec" id="resultat">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="kicker">Le résultat</p>
-      <h2>Ce que ça donne, <em>sur le toit.</em></h2>
-      <p>La qualité d'une couverture se juge sur les détails : alignement, recouvrement, solins, propreté du faîtage.</p>
-    </div>
-    <div class="ba">
-      <figure>
-        <img src="../../assets/img/toiture-renovation-liteaux.jpg" alt="Toiture ancienne déposée avant réfection" loading="lazy" width="1400" height="1050" />
-        <span class="ba-tag is-before">Avant</span>
-        <figcaption>Avant : couverture déposée, liteaux et charpente mis à nu pour inspection.</figcaption>
-      </figure>
-      <figure>
-        <img src="../../assets/img/couvreur-toit-securite.jpg" alt="Couverture reposée par un couvreur équipé" loading="lazy" width="1400" height="1050" />
-        <span class="ba-tag is-after">Après</span>
-        <figcaption>Après : éléments reposés à l'identique, points singuliers repris.</figcaption>
-      </figure>
-    </div>
-    <p class="ba-note">Photos d'illustration du métier, et non de chantiers VBR : elles seront remplacées par vos propres avant / après dès que vous nous les fournirez.</p>
-  </div>
-</section>
+
 
 <!-- ================= BUDGET ================= -->
 <section class="sec sec-tint" id="prix">
   <div class="wrap">
     <div class="sec-head">
       <p class="kicker">Combien ça coûte</p>
-      <h2>Entre une reprise et une réfection, <em>il y a un facteur cinquante.</em></h2>
-      <p>C'est précisément pour ça qu'aucun couvreur honnête ne donne un prix par téléphone. Le diagnostic décide du montant, et il ne se fait que sur le toit.</p>
+      <h2>Combien ça coûte, <em>et ce qui fait varier le prix.</em></h2>
+      <p>Entre une reprise de trois tuiles et une réfection complète, il y a un facteur cinquante. Aucun couvreur honnête ne chiffre ça par téléphone.</p>
     </div>
     <div class="budget">
       <p style="font-weight:600;margin:0">Ce qui fait varier le prix, chez vous :</p>
-      <div class="budget-grid"><div class="bf"><b>L'ampleur réelle</b><span>trois ardoises à reposer, une noue à refaire ou 120 m² de couverture : ce sont trois métiers différents.</span></div>
-        <div class="bf"><b>L'état de la charpente</b><span>s'il faut renforcer ou remplacer du bois, c'est le poste qui pèse le plus lourd dans un devis de réfection.</span></div>
-        <div class="bf"><b>Le matériau</b><span>ardoise naturelle, ardoise fibre-ciment, tuile mécanique, tuile plate, zinc : les écarts de fourniture sont considérables.</span></div>
-        <div class="bf"><b>L'accès et la sécurité</b><span>échafaudage, hauteur, mitoyenneté, pente : obligatoires et chiffrés à part, jamais dissimulés dans un forfait.</span></div></div>
+      <div class="budget-grid"><div class="bf"><b>L'ampleur réelle</b><span>trois ardoises, une noue ou 120 m² de couverture : ce sont trois métiers différents.</span></div>
+        <div class="bf"><b>L'état de la charpente</b><span>s'il faut renforcer ou remplacer du bois, c'est le poste le plus lourd du devis.</span></div>
+        <div class="bf"><b>Le matériau</b><span>ardoise naturelle, fibre-ciment, tuile mécanique, tuile plate, zinc : les écarts sont considérables.</span></div>
+        <div class="bf"><b>L'accès et la sécurité</b><span>échafaudage, hauteur, pente : chiffrés à part, jamais noyés dans un forfait.</span></div></div>
       <div class="budget-foot">
-        <p>Notre diagnostic et notre devis sont gratuits, y compris si vous décidez de ne rien faire. Quand deux solutions sont défendables, on chiffre les deux et on vous explique ce qui les sépare.</p>
+        <p>Diagnostic et devis gratuits, y compris si vous ne faites rien. Quand deux solutions se défendent, on chiffre les deux et on vous explique ce qui les sépare.</p>
         <a class="btn btn-call" href="#devis">Obtenir mon chiffrage</a>
       </div>
     </div>
@@ -370,7 +352,7 @@ window.LP_MATCH = {
   <div class="wrap">
     <div class="sec-head">
       <p class="kicker">Ce qu'en disent les clients</p>
-      <h2>Des chantiers <em>qui se racontent tout seuls.</em></h2>
+      <h2>Ce que disent <em>nos clients.</em></h2>
     </div>
     <div class="avis"><blockquote><p>« Professionnel réactif et très compréhensif. Il explique patiemment comment il travaille. »</p><footer><b>André Arcouet</b> · Brétigny-sur-Orge</footer></blockquote>
       <blockquote><p>« Très professionnel. Pose de gouttières, travail de qualité et à l'écoute de toutes vos questions. Équipe sérieuse et courtoise. »</p><footer><b>Johnny Carlson</b> · Massy</footer></blockquote>
@@ -386,7 +368,7 @@ window.LP_MATCH = {
     <div class="split">
       <div>
         <p class="kicker">Zone d'intervention</p>
-        <h2>Une équipe qui intervient <em>partout dans le 91.</em></h2>
+        <h2>Où nous intervenons <em>en Essonne.</em></h2>
         <p style="color:var(--ink-2);margin-top:.9rem">De la vallée de l'Orge au Hurepoix, de Massy et Palaiseau au nord jusqu'à Étampes et Dourdan au sud, en passant par Évry, Corbeil et Brétigny. Un déplacement, un devis, aucun frais.</p>
         <div class="zones"><span class="zone zone-main">Évry-Courcouronnes</span>
           <span class="zone zone-main">Étampes</span>
@@ -424,14 +406,12 @@ window.LP_MATCH = {
   <div class="wrap">
     <div class="sec-head">
       <p class="kicker">Les questions qu'on nous pose</p>
-      <h2>Ce qu'il faut savoir <em>avant de nous appeler.</em></h2>
+      <h2>Questions <em>fréquentes.</em></h2>
     </div>
-    <div class="faq"><details><summary>Combien coûte une rénovation de toiture ?</summary><p>Tout dépend de ce dont votre toit a réellement besoin. Une reprise ponctuelle et une réfection complète n'appartiennent pas au même ordre de grandeur. Le seul moyen honnête de répondre, c'est de monter voir : le diagnostic et le devis sont gratuits.</p></details>
-      <details><summary>Vous intervenez en urgence en cas de fuite ?</summary><p>Oui, on cadre l'urgence dès l'appel. Une mise en sécurité provisoire, bâchage compris, permet souvent d'arrêter les dégâts pendant que la réparation définitive s'organise.</p></details>
-      <details><summary>Réparer ou refaire ?</summary><p>La règle simple : si le matériau est encore sain et que seuls des points singuliers ont lâché, on répare. S'il est poreux, feuilleté ou en fin de vie sur l'ensemble des pans, réparer revient à repousser le problème d'un ou deux hivers. On vous montre les photos et vous décidez.</p></details>
-      <details><summary>Travaillez-vous l'ardoise et la tuile ?</summary><p>Oui. En Essonne, la tuile mécanique et la tuile plate dominent, avec de l'ardoise sur les bâtis plus anciens. On travaille les deux, et on repose à l'identique pour conserver l'aspect de la maison.</p></details>
-      <details><summary>Prenez-vous en charge la charpente ?</summary><p>Oui. Renfort de panne, remplacement de chevron, traitement curatif du bois : c'est indissociable du travail de couverture. On ne repose jamais une couverture neuve sur une charpente dont l'état n'a pas été vérifié.</p></details>
-      <details><summary>Y a-t-il des aides pour refaire une toiture ?</summary><p>Une réfection seule n'ouvre pas droit à MaPrimeRénov'. En revanche, l'isolation des combles réalisée à cette occasion peut être éligible, et la TVA réduite s'applique en général aux logements de plus de deux ans. On vous indique ce qui s'applique à votre situation au moment du devis, sans rien promettre à votre place.</p></details></div>
+    <div class="faq"><details><summary>Combien coûte une réparation de toiture ?</summary><p>Une reprise ponctuelle et une réfection complète n'ont pas le même ordre de grandeur. Le seul moyen honnête de répondre est de monter voir : diagnostic et devis gratuits.</p></details>
+      <details><summary>Vous intervenez en urgence en cas de fuite ?</summary><p>Oui, on cadre l'urgence dès l'appel. Un bâchage provisoire arrête les dégâts pendant que la réparation s'organise.</p></details>
+      <details><summary>Réparer ou refaire ?</summary><p>Si le matériau est sain et que seuls des points singuliers ont lâché, on répare. S'il est poreux ou en fin de vie sur tous les pans, réparer ne fait que repousser le problème d'un ou deux hivers. On vous montre les photos, vous décidez.</p></details>
+      <details><summary>Travaillez-vous l'ardoise et la tuile ?</summary><p>Oui. En Essonne, la tuile mécanique et la tuile plate dominent, avec de l'ardoise sur les bâtis plus anciens. On travaille les deux, et on repose à l'identique pour conserver l'aspect de la maison.</p></details></div>
   </div>
 </section>
 
@@ -542,6 +522,6 @@ window.LP_MATCH = {
   <a class="btn btn-ghost" href="#devis">Devis gratuit</a>
 </div>
 
-<script src="../../assets/script.js?v=1" defer></script>
+<script src="../../assets/script.js?v=5" defer></script>
 </body>
 </html>

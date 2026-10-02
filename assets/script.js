@@ -182,6 +182,11 @@
     if (/\b(renovation|refection|refaire|changement|remplacement|neuve|remaniage)\b/.test(q)) return 'renovation';
     if (/\b(demoussage|anti mousse|antimousse|mousse|lichen|nettoyage|lavage)\b/.test(q)) return 'nettoyage';
     if (/\b(velux|fenetre de toit)\b/.test(q)) return 'velux';
+    /* « couvreur » porte la totalite des conversions du compte et ne
+       declenchait aucune variante : la requete tombait dans le vide et
+       le visiteur lisait un titre ou le mot qu'il venait de taper
+       n'apparaissait pas. */
+    if (/\b(couvreur|couvreurs|couverture|zingueur|artisan toiture)\b/.test(q)) return 'couvreur';
     if (/\b(toit|toiture|couverture|ardoise|tuile)\b/.test(q)) return 'toiture';
     return '';
   }
@@ -223,6 +228,9 @@
        rassure plus que « Périgueux · Bergerac · Sarlat ». */
     var ville = communeDetectee(terme);
     if (ville) {
+      if (intent === 'couvreur' && h1) {
+        h1.innerHTML = 'Couvreur à <em>' + ville + '</em>';
+      }
       var loc = document.querySelector('.hero-loc');
       if (loc) {
         var svg = loc.querySelector('svg');
